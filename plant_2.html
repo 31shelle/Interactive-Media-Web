@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Plant 1</title>
+
+	<style>
+		
+		html,body{
+			margin:0;
+		}
+
+
+		.pot{
+			border-bottom: 250px solid black;
+			border-left: 60px solid transparent;
+			border-right: 60px solid transparent;
+			height: 0;
+			width: 180px;
+			transform: rotate(180deg);
+
+			position: absolute;
+			top: 600px; 
+			left:600px;
+		}
+
+		.bottom{
+			width: 180px;
+			height: 60px;
+			background: black;
+			border-radius: 50%;
+
+			position: absolute;
+			top: 818px;
+			left: 660px;
+		}
+
+		.rim{
+			border-bottom: 80px solid black;
+			border-left: 15px solid transparent;
+			border-right: 15px solid transparent;
+			height: 0;
+			width: 285px;
+			transform: rotate(180deg);
+
+			position: absolute;
+			top: 590px; 
+			left:592px;
+		}
+
+		.rimbottom{
+			width: 287px;
+			height: 90px;
+			background: black;
+			border: 1px solid white;
+			border-radius: 50%;
+
+			position: absolute;
+			top: 618px;
+			left: 605px;
+		}
+
+		.inside{
+			width: 291px;
+			height: 75px;
+			background: white;
+			border: 8px solid black;
+			border-radius: 50%;
+
+			box-shadow:
+			0 0 0 2px white, 0 0 0 4px black; 
+
+			position: absolute;
+			top: 546px;
+			left: 596px;
+		}
+
+		.leaf1{
+			background:black;
+			width: 250px;
+			height:250px;
+			border-radius:50%;
+
+			position: absolute;
+			top: 495px;
+			left: 790px;
+
+		}
+
+		.leaf1counter{
+			background:white;
+			width: 200px;
+			height:220px;
+			border-radius:50%;
+
+			position: absolute;
+			top: 530px;
+			left: 778px;
+
+		}
+
+		.stem{
+
+			width:700px; 
+			height:195px;  
+			border:solid 6px black;
+			border-color:black transparent transparent transparent;
+			border-radius: 40%/155px 115px 50px 100px;
+			transform: rotate(-65deg);
+
+			position:absolute;
+			top:270px;
+			left:634px;
+		}
+
+		.leaf1_5{
+			background:black;
+			width: 55px;
+			height:40px;
+			border-radius:30px 170px 30px 180px;
+
+			position: absolute;
+			top: 450px;
+			left: 840px;
+			transform: rotate(-40deg);
+		}
+
+		.leaf2{
+			width: 85px; 
+			height: 160px;
+			background-color: black;
+			border:  solid black;  
+			border-radius: 10px 170px 30px 170px;  /* top right bottom left */
+			transform:rotate(-40deg);
+			
+			position:absolute;
+			top:340px;
+			left:910px;
+		}
+
+		/*.leaf2counter{
+			background:red;
+			width: 110px;
+			height:28px;
+			border-radius:42%;
+
+			position: absolute;
+			top: 425px;
+			left: 850px;
+			transform: rotate(58deg);
+		}*/
+
+		.leaf3{
+			background:black;
+			width: 150px;
+			height:120px;
+			border-radius:50%;
+
+			position: absolute;
+			top: 280px;
+			left: 900px;
+			transform: rotate(20deg);
+		}
+
+		.leaf3counter{
+			background:white;
+			width: 140px;
+			height:120px;
+			border-radius:50%;
+
+			position: absolute;
+			top: 305px;
+			left: 890px;
+			transform: rotate(40deg);
+		}
+
+		.leaf4{
+			width: 65px; 
+			height: 90px;
+			background-color: black;
+			border:  solid black;  
+			border-radius: 20px 140px 40px 140px;  /* top right bottom left */
+			transform:rotate(-50deg);
+			
+			position:absolute;
+			top:165px;
+			left:975px;
+		}
+
+		.leaf5{
+			/*width: 90px; 
+			height: 100px;
+			background-color: black;
+			border:  solid black;  
+			border-radius: 20px 140px 40px 140px; 
+			transform:rotate(80deg);
+			
+			position:absolute;
+			top:50px;
+			left:975px;*/
+
+			background:black;
+			width: 100px;
+			height:140px;
+			border-radius:13px 180px 10px 180px;
+
+			position: absolute;
+			top: 47px;
+			left: 982px;
+			transform: rotate(80deg);
+		}
+
+		.leaf6{
+			width: 110px; 
+			height: 150px;
+			background-color: black;
+			border:  solid black;  
+			border-radius: 10px 140px 60px 120px;  /* top right bottom left */
+			
+			position:absolute;
+			top:470px;
+			left:690px;
+			transform:rotate(-90deg);
+		}
+
+		.leaf7{
+			background:black;
+			width: 140px;
+			height:150px;
+			border-radius:50%;
+
+			position: absolute;
+			top: 390px;
+			left: 692px;
+			transform: rotate(-10deg);
+		}
+
+		.leaf7counter{
+			background:white;
+			width: 130px;
+			height:130px;
+			border-radius:50%;
+
+			position: absolute;
+			top: 430px;
+			left: 695px;
+			transform: rotate(-10deg);
+		}
+
+		.leaf8{
+			background:black;
+			width: 120px;
+			height:90px;
+			border-radius:50%;
+
+			position: absolute;
+			top: 350px;
+			left: 747px;
+			transform: rotate(15deg);
+		}
+
+		.leaf8counter{
+			background:white;
+			width: 130px;
+			height:100px;
+			border-radius:45%;
+
+			position: absolute;
+			top: 370px;
+			left: 735px;
+			transform: rotate(5deg);
+		}
+
+		.leaf9{
+			background:black;
+			width: 35px;
+			height:35px;
+			border-radius:25px 180px 25px 180px;
+
+			position: absolute;
+			top: 280px;
+			left: 873px;
+			transform: rotate(10deg);
+		}
+
+		.leaf10{
+			background:black;
+			width: 130px;
+			height:80px;
+			border-radius:48%;
+
+			position: absolute;
+			top: 160px;
+			left: 823px;
+			transform: rotate(35deg);
+		}
+
+		.leaf10counter{
+			background:white;
+			width: 140px;
+			height:100px;
+			border-radius:48%;
+
+			position: absolute;
+			top: 180px;
+			left: 800px;
+			transform: rotate(15deg);
+		}
+
+		.leaf11{
+			background:black;
+			width: 70px;
+			height:90px;
+			border-radius:25px 160px 25px 160px;
+
+			position: absolute;
+			top: 55px;
+			left: 935px;
+			transform: rotate(12deg);
+		}
+
+
+
+		.stem2{
+			width:510px; 
+			height:195px;  
+			border:solid 6px black;
+			border-color:black transparent transparent transparent;
+			border-radius: 50%/155px 125px 60px 80px;
+			transform: rotate(-100deg);
+
+			position:absolute;
+			top:316px;
+			left:480px;
+		}
+
+		.leaf12{
+			background:black;
+			width: 185px;
+			height:170px;
+			border-radius:50%;
+
+			position: absolute;
+			top: 490px;
+			left: 495px;
+			transform: rotate(-30deg);
+		}
+
+		.leaf12counter{
+			background:white;
+			width: 160px;
+			height:130px;
+			border-radius:50%;
+
+			position: absolute;
+			top: 535px;
+			left: 525px;
+			transform: rotate(-30deg);
+		}
+
+		.leaf13{
+			background:black;
+			width: 60px;
+			height:90px;
+			border-radius:25px 160px 50px 160px;
+
+			position: absolute;
+			top: 436px;
+			left: 663px;
+			transform: rotate(80deg);
+		}
+
+		.leaf14{
+			background:black;
+			width: 60px;
+			height:30px;
+			border-radius:30px 170px 20px 180px;
+
+			position: absolute;
+			top: 445px;
+			left: 589px;
+			transform: rotate(185deg);
+		}
+
+		.leaf15{
+			background:black;
+			width: 60px;
+			height:50px;
+			border-radius:50%;
+
+			position: absolute;
+			top: 400px;
+			left: 638px;
+			transform: rotate(-30deg);
+		}
+
+		.leaf15counter{
+			background:white;
+			width: 60px;
+			height:40px;
+			border-radius:50%;
+
+			position: absolute;
+			top: 418px;
+			left: 638px;
+			transform: rotate(-20deg);
+		}
+
+		.leaf16{
+			background:black;
+			width: 80px;
+			height:50px;
+			border-radius:50%;
+
+			position: absolute;
+			top: 380px;
+			left: 560px;
+			transform: rotate(10deg);
+		}
+
+		.leaf16counter{
+			background:white;
+			width: 100px;
+			height:50px;
+			border-radius:50%;
+
+			position: absolute;
+			top: 398px;
+			left: 540px;
+			transform: rotate(-15deg);
+		}
+
+		.leaf17{
+			background:black;
+			width: 70px;
+			height:50px;
+			border-radius:30px 170px 20px 180px;
+
+			position: absolute;
+			top: 340px;
+			left: 635px;
+			transform: rotate(-40deg);
+		}
+
+		.leaf17counter{
+			background:white;
+			width: 90px;
+			height:40px;
+			border-radius:50%;
+
+			position: absolute;
+			top: 357px;
+			left: 630px;
+			transform: rotate(-5deg);
+		}
+
+		.leaf18{
+			background:black;
+			width: 45px;
+			height:60px;
+			border-radius:25px 160px 10px 180px;
+
+			position: absolute;
+			top: 300px;
+			left: 588px;
+			transform: rotate(0deg);
+		}
+
+		.leaf19{
+			background:black;
+			width: 60px;
+			height:35px;
+			border-radius:50%;
+
+			position: absolute;
+			top: 280px;
+			left: 630px;
+			transform: rotate(-5deg);
+		}
+
+		.leaf19counter{
+			background:white;
+			width: 70px;
+			height:35px;
+			border-radius:50%;
+
+			position: absolute;
+			top: 292px;
+			left: 628px;
+			transform: rotate(0deg);	
+		}
+
+		.leaf20{
+			background:black;
+			width: 15px;
+			height:30px;
+			border-radius:30px 160px 10px 180px;
+
+			position: absolute;
+			top: 250px;
+			left: 610px;
+			transform: rotate(-20deg);
+		}
+
+		.leaf21{
+			width: 42px; 
+			height: 40px;
+			background-color: black;
+			border:  solid black;  
+			border-radius: 25px 170px 25px 170px;  /* top right bottom left */
+			transform:rotate(65deg);
+			
+			position:absolute;
+			top:200px;
+			left:623px;	
+		}
+
+
+	</style>
+
+
+
+</head>
+<body>
+
+	<div class="leaf21"></div>
+	<div class="leaf20"></div>
+	<div class="leaf19"></div>
+	<div class="leaf19counter"></div>
+	<div class="leaf18"></div>
+	<div class="leaf17"></div>
+	<div class="leaf17counter"></div>
+	<div class="leaf16"></div>
+	<div class="leaf16counter"></div>
+	<div class="leaf15"></div>
+	<div class="leaf15counter"></div>
+	<div class="leaf12"></div>
+	<div class="leaf12counter"></div>
+	
+	<div class="leaf11"></div>
+	<div class="leaf10"></div>
+	<div class="leaf10counter"></div>
+	<div class="leaf9"></div>
+	<div class="leaf8"></div>
+	<div class="leaf8counter"></div>
+	<div class="leaf7"></div>
+	<div class="leaf7counter"></div>
+
+	<div class="leaf5"></div>
+	<div class="leaf4"></div>
+	<div class="leaf3"></div>
+	<div class="leaf3counter"></div>
+	<div class="leaf2"></div>
+	<!-- <div class="leaf2counter"></div> -->
+	<div class="leaf1_5"></div>
+	<div class="leaf1"></div>
+	<div class="leaf1counter"></div>
+
+	<div class="pot"></div>
+	<div class="bottom"></div>
+	<div class="rimbottom"></div>
+	<div class="rim"></div>
+	<div class="inside"></div>
+	<div class="stem"></div>
+	<div class="stem2"></div>
+
+	<div class="leaf6"></div>
+	<div class="leaf13"></div>
+	<div class="leaf14"></div>
+
+	
+
+</body>
+</html>
