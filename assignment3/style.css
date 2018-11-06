@@ -1,0 +1,166 @@
+
+
+body{
+    background-image: url("background.png"), url("concrete.png");
+    background-size: 135%, 75%;
+    background-repeat: no-repeat,repeat;
+    background-position: absolute;
+
+}
+
+.window{
+    content: url("windowframe.png");
+    max-width: 27%;
+    position: relative;
+    left: 170px;
+    top: 45px;
+}
+
+.outside{
+    width: 420px;
+    height: 380px;
+    background: white;
+    position: relative;
+    left: 190px;
+    top: -350px;
+    z-index: -50;
+}
+
+/*items*/
+
+#clock{
+    position: absolute;
+    left: 900px;
+    top: 233px;
+
+}
+
+#news{
+    position: absolute;
+    left: 900px;
+    top:0px;
+}
+
+#cloud{
+    position: absolute;
+    top: 140px;
+    left: 220px;
+
+}
+
+#cloudLightning{
+    position: absolute;
+    top: 130px;
+    left: 340px;
+    z-index: -20;
+}
+
+#cat{
+    position: absolute;
+    top:520px; 
+    left:500px;
+}
+
+#tv{
+    position: absolute;
+    top: 500px;
+    left: 50px;
+}
+
+#news{
+    position: absolute;
+    top: 5px;
+}
+
+#money{
+    position: absolute;
+    left: 1300px;
+    top: 7px;
+}
+
+#phone{
+    position: absolute;
+    left: 1300px;
+    top: 430px;
+}
+
+#globe{
+    position: absolute;
+    left: 1100px;
+    top: 257px;
+}
+
+#bills{
+    position: absolute;
+    left: 1480px;
+    top: 700px;
+}
+
+#trash{
+    position: absolute;
+    left: 1600px;
+    top: 500px;
+}
+
+#rock{
+    position: absolute;
+    left: 1300px;
+    top: 247px;
+}
+
+#insideframe{
+    width: 300px;
+    height: 200px;
+    background: white;
+
+    position: absolute;
+    left: 1820px;
+    top: 170px;
+}
+
+#frame{
+    position: absolute;
+    left: 1800px;
+    top: 140px;
+}
+
+#anchor{
+    position: absolute;
+    left: 1680px;
+    top: 620px;
+}
+
+
+.static {
+	cursor: not-allowed;
+	}
+    .draggable, .draggable-group {
+     cursor: move;
+     }
+
+.shadow{
+    width: 453px;
+    height: 178px;
+    background: #393939;    
+    border-radius: 60%;
+    position: fixed;
+    left: 573px;
+    top: 740px;
+    z-index: -150;
+}
+
+.droppable{
+	width: 450px;
+    height: 175px;
+    background: black;    
+    border-radius: 50%;
+    position: fixed;
+    left: 575px;
+    top: 755px;
+    z-index: -100;
+
+    background-image: url("blackhole.gif");
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: -35px center;
+  }
