@@ -1,0 +1,105 @@
+body{
+
+	font-family: 'PT Mono', monospace;
+	background-color: #f7f4f2;
+	word-spacing: -3px;
+
+}
+
+/*text*/
+
+	.info{
+		display: grid;
+		grid-template-columns: 20% 20% 20% 20% 20%;
+		grid-template-rows: 20% 20% 20% 20% 20%;
+	}
+
+	#info1{
+		color: #f95c41;
+		font-size: 40px;
+
+		margin-left: 70px;
+		/*margin-right: 1300px;*/
+		margin-top: 30px;
+		line-height: 58px;
+		position: relative;
+
+		grid-column-start: 1;
+		grid-column: 5;
+	}
+
+	#info2{
+		color: black;
+		font-size: 17px;
+		line-height: 23px;
+
+		margin-left: 715px;
+		margin-right: 360px;
+		margin-top: -100px;
+		position: absolute;
+
+		
+	}
+
+	a:link{
+		color: #21b7a9;
+		text-decoration: none;
+		font-weight: bold;
+	}
+
+	a:visited{
+		color: #21b7a9;
+		text-decoration: none;
+	}
+
+	a:hover{
+		color:#afd8d4;
+	}
+
+/*legend*/
+	
+	#legendtitle{
+		position: relative;
+		font-size: 17px;
+
+		margin-left: 715px;
+		margin-top: 200px;
+		color: black;
+		font-weight: bold;
+
+	}
+
+	 u {
+    	text-decoration: none;
+    	border-bottom: 3px solid #21b7a9;
+  	}​
+
+  	.legend{
+		position: relative;
+
+		margin-left: 715px;
+		margin-top: 50px;
+
+	}
+
+	#legend1{
+		position: relative;
+		margin-left: 710px;
+		margin-top: 50px;
+
+	}
+
+	#legend2{
+		position: relative;
+		margin-left: 998px;
+		margin-top: -140px;
+
+	}
+
+	#legend3{
+		position: relative;
+		margin-left: 1310px;
+		margin-top: -135px;
+		margin-bottom: 30px;
+
+	}
